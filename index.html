@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Kedai Buah</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <h2>Kalkulator Mudah Kedai Buah</h2>
@@ -19,16 +20,7 @@
     <button class="kira">Kira</button>
     <h3 class="hasil"></h3>
 
-    <script>
-        $(document).ready(function(){
-            $(".kira").click(function(){
-                var harga=$(".harga").val();
-                var berat=$(".berat").val();
-                var jumlah=harga*berat;
-                $(".hasil").text("Jumlah Bayaran: RM"+jumlah.toFixed(2));
-            })
-        })
-    </script>
+
 
 
 </body>
